@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Developer Dashboard</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background: #111;
+      color: white;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 30px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 15px 0;
+    }
+
+    .sidebar a:hover {
+      color: #00c6ff;
+    }
+
+    /* Main Content */
+    .main {
+      flex: 1;
+      background: #f4f6f8;
+      padding: 30px;
+    }
+
+    .topbar {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      flex: 1;
+      min-width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <h2>MyPanel</h2>
+    <a href="#">Dashboard</a>
+    <a href="#">Projects</a>
+    <a href="#">Analytics</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <h2>Welcome Back, Developer 🚀</h2>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Total Projects</h3>
+        <p>8 Active</p>
+      </div>
+
+      <div class="card">
+        <h3>Tasks Completed</h3>
+        <p>42 Tasks</p>
+      </div>
+
+      <div class="card">
+        <h3>Pending Reviews</h3>
+        <p>5 Reviews</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
